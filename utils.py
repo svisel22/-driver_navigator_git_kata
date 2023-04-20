@@ -1,13 +1,13 @@
 import pandas as pd 
 
-def female():
+def male():
     # Read in Titanic dataset
     titanic_df = pd.read_csv('./data/titanic.csv') # always be in the -driver_navigator... folder
 
     # Filter to only include female passengers
-    female_df = titanic_df[titanic_df['Sex'] == 'female']
+    df = titanic_df[titanic_df['Sex'] == 'male']
 
     # Return filtered dataframe
-    return female_df
+    return df
 
-print(female())
+print(male())
